@@ -17,7 +17,7 @@ then
     nvram boot-args="-no_compat_check"
 else
     # add command line parameters, such as -v, to boot-args
-    nvram boot-args="-no_compat_check $*"
+    nvram boot-args="-no_compat_check amfi_get_out_of_my_way=1 $*"
 fi
 
 # Show the boot-args setting to the user.
